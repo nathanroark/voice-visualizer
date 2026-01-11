@@ -17,9 +17,9 @@ export const EntityList = () => {
       ) : (
         <ul className="overflow-y-auto w-[600px] h-[calc(100vh-200px)]">
           {positions
-            .map((pos) => (
+            .map((pos: { id: string | number; coordianates: unknown }) => (
               <li key={pos.id}>
-                <code>{JSON.stringify(pos.coordianates, null, 2)}</code>
+          <code>{JSON.stringify(pos.coordianates, null, 2)}</code>
               </li>
             ))
             .reverse()}
