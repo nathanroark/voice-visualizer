@@ -19,7 +19,7 @@ export const EntityList = () => {
           {positions
             .map((pos: { id: string | number; coordianates: unknown }) => (
               <li key={pos.id}>
-          <code>{JSON.stringify(pos.coordianates, null, 2)}</code>
+                <code>{JSON.stringify(pos.coordianates, null, 2)}</code>
               </li>
             ))
             .reverse()}
